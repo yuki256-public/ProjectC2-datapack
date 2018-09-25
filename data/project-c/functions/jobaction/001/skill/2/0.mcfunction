@@ -6,7 +6,7 @@ playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 2 2
 playsound minecraft:block.enchantment_table.use master @a ~ ~ ~ 2 0.5
 
 
-summon minecraft:armor_stand ~ ~ ~ {Tags:[judgementCount],Invisible:0}
+summon minecraft:armor_stand ~ ~ ~ {Tags:[judgementCount],Invisible:1}
 scoreboard players set @s counter 0
 
 #発動対象がプレイヤーの場合
