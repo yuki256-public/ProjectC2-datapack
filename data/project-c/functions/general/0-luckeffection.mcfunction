@@ -48,21 +48,24 @@ scoreboard players set @a[tag=Elixir] CT1 1200
 scoreboard players set @a[tag=Elixir] CT2 1200
 scoreboard players set @a[tag=Elixir] CT3 1200
 scoreboard players set @a[tag=Elixir] Mana 300
-execute as @a[tag=Elixir] at @s run particle firework ~ ~1.2 ~ 0 0 0 0.5 160 
+execute as @a[tag=Elixir] at @s run particle firework ~ ~1.2 ~ 0 0 0 0.5 160
 execute as @a[tag=Elixir] at @s run playsound minecraft:block.portal.trigger master @a ~ ~ ~ 3 2
-tag @a[tag=Elixir] remove Elixir 
+tag @a[tag=Elixir] remove Elixir
 
 #extraSkill
-tag @a[tag=!extra,nbt={ActiveEffects:[{Id:26b,Amplifier:120b}]}] add extraready 
+tag @a[tag=!extra,nbt={ActiveEffects:[{Id:26b,Amplifier:120b}]}] add extraready
 
 execute as @a[tag=extraready] at @s run me がエクストラスキルの発動権を得ました！
-execute as @a[tag=extraready] at @s run particle totem_of_undying ~ ~1.5 ~ 0 0 0 0.5 100 
+execute as @a[tag=extraready] at @s run particle totem_of_undying ~ ~1.5 ~ 0 0 0 0.5 100
 execute as @a[tag=extraready] at @s run playsound minecraft:entity.firework_rocket.twinkle_far master @a ~ ~ ~ 3 1
 execute as @a[tag=extraready] at @s run playsound minecraft:entity.firework_rocket.twinkle master @a ~ ~ ~ 3 1
 
 tag @a[tag=extraready] add extra
 tag @a[tag=extraready] remove extraready
 
+#unluckでCT遅延
+scoreboard players remove @a[nbt={ActiveEffects:[{Id:27b}]}] CT1 1
+scoreboard players remove @a[nbt={ActiveEffects:[{Id:27b}]}] CT2 1
+scoreboard players remove @a[nbt={ActiveEffects:[{Id:27b}]}] CT3 1
 
-
-effect clear @a minecraft:luck 
+effect clear @a minecraft:luck
