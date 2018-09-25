@@ -10,8 +10,8 @@ summon minecraft:armor_stand ~ ~ ~ {Tags:[judgementCount],Invisible:1}
 scoreboard players set @s counter 0
 
 #発動対象がプレイヤーの場合
-execute store success score @s counter if entity @s[team=Red] run scoreboard players operation @e[sort=nearest,limit=1,tag=judgementCount] playerNumber = @a[team=Blue,distance=..5,limit=1,nbt={HurtTime:10s},tag=Battle]
-execute store success score @s counter if entity @s[team=Blue] run scoreboard players operation @e[sort=nearest,limit=1,tag=judgementCount] playerNumber = @a[team=Red,distance=..5,limit=1,nbt={HurtTime:10s},tag=Battle]
+execute store success score @s counter if entity @s[team=Red] run scoreboard players operation @e[sort=nearest,limit=1,tag=judgementCount] playerNumber = @a[team=Blue,distance=..5,limit=1,nbt={HurtTime:10s},tag=Battle] playerNumber
+execute store success score @s counter if entity @s[team=Blue] run scoreboard players operation @e[sort=nearest,limit=1,tag=judgementCount] playerNumber = @a[team=Red,distance=..5,limit=1,nbt={HurtTime:10s},tag=Battle] playerNumber
 
 #発動対象がプレイヤー以外の場合
 execute if entity @s[scores={counter=0}] run scoreboard players set @e[sort=nearest,limit=1,tag=judgementCount] playerNumber 0
