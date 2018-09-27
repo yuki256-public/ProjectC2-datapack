@@ -1,4 +1,4 @@
-#実行者     -> jobNumber = -n-
+#実行者     -> jobNumber = 00-n-
 #実行地点   -> 実行者
 
 scoreboard players reset @s usedSkill
