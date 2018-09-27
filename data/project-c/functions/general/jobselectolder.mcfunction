@@ -2,9 +2,9 @@ execute as @a[tag=JobChanged] at @s run particle firework ~ ~1 ~ 0 0 0 0.3 50
 execute as @a[tag=JobChanged] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1
 scoreboard players reset @a[tag=JobChanged] usedSkill
 replaceitem entity @a[tag=JobChanged] armor.chest minecraft:air
-effect clear @a[tag=JobChanged] minecraft:regeneration 
-effect clear @a[tag=JobChanged] minecraft:invisibility 
-effect clear @a[tag=JobChanged] minecraft:jump_boost 
+effect clear @a[tag=JobChanged] minecraft:regeneration
+effect clear @a[tag=JobChanged] minecraft:invisibility
+effect clear @a[tag=JobChanged] minecraft:jump_boost
 scoreboard players set @a[tag=JobChanged] Mana 0
 
 scoreboard players reset @a[tag=JobChanged] teleportCount
