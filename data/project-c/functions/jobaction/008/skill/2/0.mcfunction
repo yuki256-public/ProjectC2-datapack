@@ -11,3 +11,4 @@ execute if entity @s[team=Blue] run effect give @e[distance=..4,team=Red,tag=Bat
 
 
 scoreboard players set @s usedSkill 2
+tag @s remove fall400

@@ -17,13 +17,12 @@ execute if entity @s[scores={counter=20..}] run scoreboard players add @s counte
 execute if entity @s[scores={counter=20..}] run function project-c:jobaction/008/setquartz
 execute if entity @s[scores={counter=20..}] run scoreboard players set @s counter 0
 
-execute if entity @s[scores={CT2=1200..,fall=700..},gamemode=!spectator] run function project-c:jobaction/008/skill/2/0
+execute if entity @s[scores={CT2=1200..},gamemode=!spectator,tag=fall400,nbt={OnGround:1b}] run function project-c:jobaction/008/skill/2/0
 
 execute if entity @s[scores={counter_1=1..,sneak=1..,CT3=1240..},gamemode=!spectator] run function project-c:jobaction/008/skill/3/0
 
-effect give @s minecraft:jump_boost 3 255 true
-
+execute if entity @s[tag=!jumpBug,nbt={OnGround:0b}] run function project-c:jobaction/008/jumpbug
+execute if entity @s[tag=jumpBug,nbt={OnGround:1b}] run tag @s remove jumpBug
 
 scoreboard players reset @s aviate
 scoreboard players reset @s sneak
-scoreboard players reset @s fall
