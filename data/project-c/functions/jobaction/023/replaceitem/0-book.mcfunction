@@ -1,0 +1,5 @@
+replaceitem entity @s[tag=023-30] hotbar.4 minecraft:light_gray_glazed_terracotta{display:{Name:"{\"text\":\"Power Stone(無)\",\"italic\":false,\"color\":\"gray\"}",Lore:["§8無属性のCT回復を早める。"]}} 1
+replaceitem entity @s[tag=023-31] hotbar.4 minecraft:light_blue_glazed_terracotta{display:{Name:"{\"text\":\"Power Stone(氷)\",\"italic\":false,\"color\":\"aqua\"}",Lore:["§3氷属性のCT回復を早める。"]}} 1
+replaceitem entity @s[tag=023-32] hotbar.4 minecraft:purple_glazed_terracotta{display:{Name:"{\"text\":\"Power Stone(闇)\",\"italic\":false,\"color\":\"light_purple\"}",Lore:["§5闇属性のCT回復を早める。"]}} 1
+replaceitem entity @s[tag=023-33] hotbar.4 minecraft:red_glazed_terracotta{display:{Name:"{\"text\":\"Power Stone(火)\",\"italic\":false,\"color\":\"red\"}",Lore:["§4火属性のCT回復を早める。"]}} 1
+replaceitem entity @s[tag=023-34] hotbar.4 minecraft:lime_glazed_terracotta{display:{Name:"{\"text\":\"Power Stone(風)\",\"italic\":false,\"color\":\"green\"}",Lore:["§2風属性のCT回復を早める。"]}} 1
