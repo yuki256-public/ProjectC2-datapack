@@ -1,4 +1,4 @@
-scoreboard players set @s counter_2 3
+scoreboard players set @s counter_2 30
 execute if entity @e[tag=023-23] at @e[tag=023-23] if score @s playerNumber = @e[tag=023-23,limit=1,sort=nearest,distance=..0.01] playerNumber run kill @e[tag=023-23,limit=1,sort=nearest,distance=..0.01]
 execute if entity @e[tag=023-23s] at @e[tag=023-23s] if score @s playerNumber = @e[tag=023-23s,limit=1,sort=nearest,distance=..0.01] playerNumber run kill @e[tag=023-23s,limit=1,sort=nearest,distance=..0.01]
 summon armor_stand ~1.25 ~ ~ {Tags:["023-2-Animation","023-23s"],Marker:1b,NoGravity:1b,Invisible:1b,Rotation:[0.0f,0.0f]}
