@@ -26,7 +26,7 @@ execute if entity @s[team=BlueDummy] if entity @e[tag=023-1d] anchored eyes posi
 execute if entity @e[tag=023-1d] at @e[tag=023-1d] store result score @e[tag=023-1d,limit=1,sort=nearest] CT1 run data get entity @s Pos[0] 100
 execute if entity @e[tag=023-1d] at @e[tag=023-1d] store result score @e[tag=023-1d,limit=1,sort=nearest] CT2 run data get entity @s Pos[1] 100
 execute if entity @e[tag=023-1d] at @e[tag=023-1d] store result score @e[tag=023-1d,limit=1,sort=nearest] CT3 run data get entity @s Pos[2] 100
-tp @s ^ ^ ^0.7
+tp @s ^ ^ ^1.4
 particle witch ~ ~1.7775 ~ 1 1 1 1 8 normal @a
 particle witch ~ ~1.7775 ~ 1 1 1 1 2 force @a
 playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 1 0.5
@@ -36,11 +36,11 @@ execute if entity @e[tag=023-1d] at @e[tag=023-1d] store result score @e[tag=023
 execute if entity @e[tag=023-1d] as @e[tag=023-1d] run scoreboard players operation @s counter_1 -= @s CT1
 execute if entity @e[tag=023-1d] as @e[tag=023-1d] run scoreboard players operation @s counter_2 -= @s CT2
 execute if entity @e[tag=023-1d] as @e[tag=023-1d] run scoreboard players operation @s counter_3 -= @s CT3
-execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[0] double 0.01 run scoreboard players get @s counter_1
-execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[1] double 0.01 run scoreboard players get @s counter_2
-execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[2] double 0.01 run scoreboard players get @s counter_3
+execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[0] double 0.005 run scoreboard players get @s counter_1
+execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[1] double 0.005 run scoreboard players get @s counter_2
+execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[2] double 0.005 run scoreboard players get @s counter_3
 execute if entity @e[tag=023-1d] run data merge block -97 4 -69 {auto:1b}
 execute if entity @e[tag=023-1d] run playsound minecraft:entity.iron_golem.hurt master @a ~ ~ ~ 2 0.5
 execute if entity @e[tag=023-1d] run particle minecraft:witch ~ ~ ~ 2 2 2 0 300 normal @a
 execute if entity @e[tag=023-1d] run kill @s
-kill @s[scores={subcounter=60..}]
+kill @s[scores={subcounter=80..}]

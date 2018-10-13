@@ -11,4 +11,5 @@ scoreboard players set @e[tag=023-n-Animation] counter 10
 summon armor_stand ~ ~ ~ {Tags:["023-n-Animation","023-7-22"],Marker:1b,NoGravity:1b,Invisible:1b}
 summon armor_stand ~7.0 ~ ~ {Tags:["023-n-Animation","023-7-22s"],Marker:1b,NoGravity:1b,Invisible:1b,Rotation:[60.0f,0.0f]}
 summon armor_stand ~-7.0 ~ ~ {Tags:["023-n-Animation","023-7-22s"],Marker:1b,NoGravity:1b,Invisible:1b,Rotation:[-120.0f,0.0f]}
+scoreboard players set @e[tag=023-n-Animation] subcounter -20
 data merge block -95 4 -68 {auto:1b}
