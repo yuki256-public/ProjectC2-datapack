@@ -1,8 +1,8 @@
 scoreboard players add @s counter 1
-execute if entity @s[scores={counter=60..},tag=026-water-R] run effect give @e[team=Red,distance=..5,tag=Battle] minecraft:regeneration 3 1 false
-execute if entity @s[scores={counter=60..},tag=026-water-R] run effect give @e[team=Red,distance=..5,tag=Battle] minecraft:conduit_power 3 0
-execute if entity @s[scores={counter=60..},tag=026-water-B] run effect give @e[team=Blue,distance=..5,tag=Battle] minecraft:regeneration 3 1 false
-execute if entity @s[scores={counter=60..},tag=026-water-B] run effect give @e[team=Blue,distance=..5,tag=Battle] minecraft:conduit_power 3 0
+execute if entity @s[scores={counter=60..},tag=026-water-R] run effect give @e[team=Red,distance=..5,tag=Battle] minecraft:regeneration 2 2 false
+execute if entity @s[scores={counter=60..},tag=026-water-R] run effect give @e[team=Red,distance=..5,tag=Battle] minecraft:conduit_power 3 0 false
+execute if entity @s[scores={counter=60..},tag=026-water-B] run effect give @e[team=Blue,distance=..5,tag=Battle] minecraft:regeneration 2 2 false
+execute if entity @s[scores={counter=60..},tag=026-water-B] run effect give @e[team=Blue,distance=..5,tag=Battle] minecraft:conduit_power 3 0 false
 execute if entity @s[scores={counter=60..}] run particle minecraft:rain ~ ~3 ~ 1 1 1 1 200 normal @a
 execute if entity @s[scores={counter=60..}] run particle minecraft:rain ~ ~3 ~ 1 1 1 1 50 force @a
 execute if entity @s[scores={counter=60..}] run particle minecraft:end_rod ~ ~ ~ 0 0 0 0.2 100 normal @a

@@ -4,14 +4,10 @@ execute positioned ~ ~0.1 ~ run particle minecraft:dust 0.67 0.67 0.67 4 ^7.5 ^ 
 execute positioned ~ ~0.1 ~ run particle minecraft:dust 0.67 0.67 0.67 4 ^-7.5 ^ ^ 0 0 0 1 1 normal @a
 execute positioned ~ ~0.1 ~ run particle minecraft:dust 0.67 0.67 0.67 4 ^ ^ ^7.5 0 0 0 1 1 normal @a
 execute positioned ~ ~0.1 ~ run particle minecraft:dust 0.67 0.67 0.67 4 ^ ^ ^-7.5 0 0 0 1 1 normal @a
-execute positioned ~ ~0.35 ~ run particle minecraft:dust 0.67 0.67 0.67 3 ^7.5 ^ ^ 0 0 0 1 1 force @a
-execute positioned ~ ~0.35 ~ run particle minecraft:dust 0.67 0.67 0.67 3 ^-7.5 ^ ^ 0 0 0 1 1 force @a
-execute positioned ~ ~0.35 ~ run particle minecraft:dust 0.67 0.67 0.67 3 ^ ^ ^7.5 0 0 0 1 1 force @a
-execute positioned ~ ~0.35 ~ run particle minecraft:dust 0.67 0.67 0.67 3 ^ ^ ^-7.5 0 0 0 1 1 force @a
-execute positioned ~ ~0.5 ~ run particle minecraft:dust 0.67 0.67 0.67 2 ^7.5 ^ ^ 0 0 0 1 1 normal @a
-execute positioned ~ ~0.5 ~ run particle minecraft:dust 0.67 0.67 0.67 2 ^-7.5 ^ ^ 0 0 0 1 1 normal @a
-execute positioned ~ ~0.5 ~ run particle minecraft:dust 0.67 0.67 0.67 2 ^ ^ ^7.5 0 0 0 1 1 normal @a
-execute positioned ~ ~0.5 ~ run particle minecraft:dust 0.67 0.67 0.67 2 ^ ^ ^-7.5 0 0 0 1 1 normal @a
+execute positioned ~ ~0.4 ~ run particle minecraft:dust 0.67 0.67 0.67 2 ^7.5 ^ ^ 0 0 0 1 1 force @a
+execute positioned ~ ~0.4 ~ run particle minecraft:dust 0.67 0.67 0.67 2 ^-7.5 ^ ^ 0 0 0 1 1 force @a
+execute positioned ~ ~0.4 ~ run particle minecraft:dust 0.67 0.67 0.67 2 ^ ^ ^7.5 0 0 0 1 1 force @a
+execute positioned ~ ~0.4 ~ run particle minecraft:dust 0.67 0.67 0.67 2 ^ ^ ^-7.5 0 0 0 1 1 force @a
 execute if entity @s[team=RedDummy] run effect give @e[tag=Battle,team=Red,distance=..7] minecraft:resistance 1 2
 execute if entity @s[team=BlueDummy] run effect give @e[tag=Battle,team=Blue,distance=..7] minecraft:resistance 1 2
 execute if entity @s[team=RedDummy] if entity @e[tag=Battle,team=Red,distance=..7,nbt={HurtTime:10s}] run scoreboard players add @s counter 20

@@ -12,7 +12,7 @@ execute if entity @s[team=BlueDummy] if entity @e[tag=023-1d] positioned as @e[t
 execute if entity @e[tag=023-1d] at @e[tag=023-1d] store result score @e[tag=023-1d,limit=1,sort=nearest] CT1 run data get entity @s Pos[0] 100
 execute if entity @e[tag=023-1d] at @e[tag=023-1d] store result score @e[tag=023-1d,limit=1,sort=nearest] CT2 run data get entity @s Pos[1] 100
 execute if entity @e[tag=023-1d] at @e[tag=023-1d] store result score @e[tag=023-1d,limit=1,sort=nearest] CT3 run data get entity @s Pos[2] 100
-tp @s ^ ^ ^1
+tp @s ^ ^ ^2
 particle minecraft:poof ~ ~ ~ 0.5 0.5 0.5 0.05 4 normal @a
 particle minecraft:poof ~ ~ ~ 0.5 0.5 0.5 0.05 1 force @a
 particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 normal @a
@@ -23,9 +23,9 @@ execute if entity @e[tag=023-1d] at @e[tag=023-1d] store result score @e[tag=023
 execute if entity @e[tag=023-1d] as @e[tag=023-1d] run scoreboard players operation @s counter_1 -= @s CT1
 execute if entity @e[tag=023-1d] as @e[tag=023-1d] run scoreboard players operation @s counter_2 -= @s CT2
 execute if entity @e[tag=023-1d] as @e[tag=023-1d] run scoreboard players operation @s counter_3 -= @s CT3
-execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[0] double -0.007 run scoreboard players get @s counter_1
-execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[1] double 0.007 run scoreboard players get @s counter_2
-execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[2] double -0.007 run scoreboard players get @s counter_3
+execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[0] double -0.0035 run scoreboard players get @s counter_1
+execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[1] double 0.0035 run scoreboard players get @s counter_2
+execute if entity @e[tag=023-1d] as @e[tag=023-1d] store result entity @s Motion[2] double -0.0035 run scoreboard players get @s counter_3
 execute if entity @e[tag=023-1d] run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 2 0.5
 execute if entity @e[tag=023-1d] run particle minecraft:poof ~ ~ ~ 2 2 2 0.02 300 normal @a
 execute if entity @e[tag=023-1d] run kill @s
