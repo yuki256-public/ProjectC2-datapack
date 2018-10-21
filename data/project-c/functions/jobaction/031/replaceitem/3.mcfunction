@@ -1,0 +1,4 @@
+execute unless entity @s[tag=031-S3toggle] run replaceitem entity @s hotbar.3 minecraft:redstone{display:{Name:"{\"text\":\"Bloody Bandage\",\"color\":\"dark_red\",\"bold\":true}",Lore:["§e発動:右クリック","§c15秒間、強靭な再生能力を得る。","§aCT:30,ゲージ消費:35","","§e発動:ドロップ","§7スキル効果を切り替える。","§4§l§oBloody Bandage§f⇔§4§l§oBloody Force"]},031S3:1b} 1
+execute if entity @s[tag=031-S3toggle] run replaceitem entity @s hotbar.3 minecraft:redstone{display:{Name:"{\"text\":\"Bloody Force\",\"color\":\"dark_red\",\"bold\":true}",Lore:["§e発動:右クリック","§c10秒間、強靭な攻撃力を得る。","§aCT:30,ゲージ消費:45","","§e発動:ドロップ","§7スキル効果を切り替える。","§4§l§oBloody Bandage§f⇔§4§l§oBloody Force"]},Enchantments:[{}],HideFlags:1,031S3:1b} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady3
