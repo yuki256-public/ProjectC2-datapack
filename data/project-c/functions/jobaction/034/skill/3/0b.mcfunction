@@ -13,5 +13,5 @@ playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 0.94
 playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 0.95
 playsound minecraft:entity.wolf.howl master @a ~ ~ ~ 1.6 0.96
 
-execute if entity @s[team=RedDummy] if entity @e[type=wolf,distance=..16,team=Red] as @e[type=wolf,distance=..16,team=Red] at @s run function project-c:jobaction/032/skill/3/1
-execute if entity @s[team=BlueDummy] if entity @e[type=wolf,distance=..16,team=Blue] as @e[type=wolf,distance=..16,team=Blue] at @s run function project-c:jobaction/032/skill/3/1
+execute if entity @s[team=RedDummy] if entity @e[type=wolf,distance=..16,team=Red] as @e[type=wolf,distance=..16,team=Red] at @s run function project-c:jobaction/034/skill/3/1
+execute if entity @s[team=BlueDummy] if entity @e[type=wolf,distance=..16,team=Blue] as @e[type=wolf,distance=..16,team=Blue] at @s run function project-c:jobaction/034/skill/3/1
