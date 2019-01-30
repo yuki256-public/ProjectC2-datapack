@@ -1,4 +1,4 @@
-scoreboard players set @s CT3 900
+scoreboard players set @s CT3 600
 
 
 playsound minecraft:entity.skeleton.death master @a ~ ~ ~ 1 0.5

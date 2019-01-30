@@ -1,4 +1,4 @@
-scoreboard players set @s CT2 900
+scoreboard players set @s CT2 800
 
 
 playsound minecraft:entity.evoker_fangs.attack master @a ~ ~ ~ 1 1

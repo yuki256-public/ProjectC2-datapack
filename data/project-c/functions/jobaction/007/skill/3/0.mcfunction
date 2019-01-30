@@ -1,4 +1,4 @@
-scoreboard players set @s CT3 1100
+scoreboard players set @s CT3 1040
 
 
 execute if entity @s[scores={counter_1=0}] run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 2

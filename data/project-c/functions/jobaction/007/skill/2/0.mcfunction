@@ -1,4 +1,4 @@
-scoreboard players set @s CT2 1100
+scoreboard players set @s CT2 1040
 
 
 execute if entity @s[scores={counter_1=0}] run playsound minecraft:entity.wither.shoot master @a ~ ~ ~ 1 2

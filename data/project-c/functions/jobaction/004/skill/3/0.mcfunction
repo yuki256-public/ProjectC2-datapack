@@ -6,7 +6,7 @@ particle minecraft:explosion ~ ~1 ~ 0 0 0 1 1
 
 
 tag @e[type=arrow,distance=..5,limit=1,sort=nearest] add ArrowP
-data merge entity @e[tag=ArrowP,sort=nearest,limit=1] {damage:6.0d,Tag:["Arrow"],life:1200}
+data merge entity @e[tag=ArrowP,sort=nearest,limit=1] {damage:5.5d,Tag:["Arrow"],life:1200}
 
 data merge block -69 2 -122 {auto:1b}
 

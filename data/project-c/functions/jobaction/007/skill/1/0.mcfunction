@@ -1,4 +1,4 @@
-scoreboard players set @s CT1 1060
+scoreboard players set @s CT1 1000
 
 
 execute if entity @s[scores={counter_1=0}] run playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 1 2
@@ -11,7 +11,7 @@ execute if entity @s[scores={counter_1=1}] at @e[type=minecraft:snowball,sort=ne
 
 execute if entity @s[scores={counter_1=2}] run playsound minecraft:entity.ghast.shoot master @a ~ ~ ~ 1 0.5
 execute if entity @s[scores={counter_1=2}] run particle flame ~ ~1 ~ 0 0 0 0.2 400
-execute if entity @s[scores={counter_1=2}] at @e[type=minecraft:snowball,sort=nearest,limit=1,distance=..5] run summon fireball ~ ~ ~ {direction:[0.0d,0.0d,0.0d],ExplosionPower:4,Tags:["FECharge2"]}
+execute if entity @s[scores={counter_1=2}] at @e[type=minecraft:snowball,sort=nearest,limit=1,distance=..5] run summon fireball ~ ~ ~ {direction:[0.0d,0.0d,0.0d],ExplosionPower:3,Tags:["FECharge2"]}
 
 execute as @e[type=minecraft:snowball,sort=nearest,limit=1,distance=..5] positioned as @s run teleport @s ~ ~-1.2 ~
 data merge entity @e[type=minecraft:snowball,sort=nearest,limit=1,distance=..5] {Motion:[0.0d,10.0d,0.0d]}
