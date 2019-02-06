@@ -1,4 +1,4 @@
-scoreboard players set @s CT1 800
+scoreboard players set @s CT1 900
 execute if entity @s[team=Red] run tag @e[type=wolf,distance=..8] add 034-cometR
 execute if entity @s[team=Blue] run tag @e[type=wolf,distance=..8] add 034-cometB
 execute unless entity @e[tag=034-cometR] unless entity @e[tag=034-cometB] run title @s actionbar {"text":"周囲に狼がいません","color":"red","underlined":true}

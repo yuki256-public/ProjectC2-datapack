@@ -12,6 +12,9 @@ execute if entity @s[scores={counter=1}] store result entity @s Motion[0] double
 execute if entity @s[scores={counter=1}] store result entity @s Motion[1] double 0.025 run scoreboard players get @s counter_2
 execute if entity @s[scores={counter=1}] store result entity @s Motion[2] double 0.025 run scoreboard players get @s counter_3
 
+#execute if entity @s[scores={counter=2..}] store result entity @s Motion[0] float 0.01 run data get entity @s Motion[0] 107.69230769230769230769230769231
+#execute if entity @s[scores={counter=2..}] store result entity @s Motion[2] float 0.01 run data get entity @s Motion[2] 107.69230769230769230769230769231
+
 kill @s[scores={counter=100..}]
 kill @s[nbt={OnGround:1b},scores={counter=2..}]
 

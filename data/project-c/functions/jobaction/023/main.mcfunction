@@ -12,8 +12,7 @@ execute if entity @s[tag=023-regen] run effect clear @s minecraft:regeneration
 execute if entity @s[tag=023-regen] run tag @s remove 023-regen
 
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Shot Wand\",\"italic\":false}"}}}},scores={CT1=1200..,useCarrotStick=1..},tag=SkillReady1,gamemode=!spectator] run function project-c:jobaction/023/skill/1/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Circle Magic\",\"italic\":false}"}}}},scores={CT2=1200..,sneak=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/023/skill/2/0
-execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Circle Magic\",\"italic\":false}"}}}},scores={CT2=1200..,useCarrotStick=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/023/skill/2/2
+execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Circle Magic\",\"italic\":false}"}}}},scores={CT2=1200..,useCarrotStick=1..},tag=SkillReady2,gamemode=!spectator] run function project-c:jobaction/023/skill/2/0
 execute if entity @s[nbt={SelectedItem:{tag:{023PowerStick:1b}}},scores={useCarrotStick=1..}] run function project-c:jobaction/023/skill/0/0
 execute if entity @s[nbt={SelectedItem:{tag:{display:{Name:"{\"text\":\"Assist Book\",\"italic\":false}"}}}},scores={CT3=1200..,useCarrotStick=1..},tag=SkillReady3,gamemode=!spectator] run function project-c:jobaction/023/skill/3/0
 execute if entity @s[tag=023-2,scores={damageDealt=20..},nbt={SelectedItem:{tag:{023PowerStick:1b}}}] run function project-c:jobaction/023/skill/0/0-3a
@@ -26,5 +25,4 @@ execute if entity @s[tag=023-4] run title @s actionbar ["",{"text":"無:CT","col
 
 
 scoreboard players reset @s[scores={useCarrotStick=1..}] useCarrotStick
-scoreboard players reset @s[scores={sneak=1..}] sneak
 scoreboard players reset @s[scores={damageDealt=1..}] damageDealt

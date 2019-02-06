@@ -8,4 +8,5 @@ execute if entity @s[team=BlueDummy] positioned ~ ~0.35 ~ run particle minecraft
 execute if entity @s[team=BlueDummy] positioned ~ ~0.35 ~ run particle minecraft:dust 1 0.33 0.33 2 ^-3.0 ^ ^ 0 0 0 1 1 force @a[team=Blue]
 execute if entity @s[team=BlueDummy] positioned ~ ~0.35 ~ run particle minecraft:dust 1 0.33 0.33 2 ^ ^ ^3.0 0 0 0 1 1 force @a[team=Blue]
 execute if entity @s[team=BlueDummy] positioned ~ ~0.35 ~ run particle minecraft:dust 1 0.33 0.33 2 ^ ^ ^-3.0 0 0 0 1 1 force @a[team=Blue]
-kill @s[scores={counter=600..}]
+execute if entity @s[scores={counter=60..}] run function project-c:jobaction/023/skill/2/2
+kill @s[scores={counter=60..}]

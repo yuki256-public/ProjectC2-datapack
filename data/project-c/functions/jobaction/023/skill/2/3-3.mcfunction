@@ -19,18 +19,6 @@ execute if entity @s[scores={counter=100..}] run playsound minecraft:block.glass
 execute if entity @s[scores={counter=100..}] run playsound minecraft:block.glass.break master @a ~ ~ ~ 2 0.5
 execute if entity @s[scores={counter=100..}] run playsound minecraft:block.glass.break master @a ~ ~ ~ 2 0.5
 
-execute if entity @s[scores={counter=40}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=45}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=50}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=55}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=60}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=65}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=70}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=75}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=80}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=85}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=90}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=95}] run function project-c:jobaction/023/skill/2/3-3p
-execute if entity @s[scores={counter=100}] run function project-c:jobaction/023/skill/2/3-3p
-
+execute if entity @s[scores={counter=25..40}] run function project-c:jobaction/023/skill/2/3-3p
+execute if entity @s[scores={counter=45}] run function project-c:jobaction/023/skill/2/3-3-45
 kill @s[scores={counter=100..}]
