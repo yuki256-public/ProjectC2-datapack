@@ -1,5 +1,7 @@
 scoreboard players set @s CT3 600
 scoreboard players set @s drop 0
+clear @s iron_axe{display:{Name:"{\"text\":\"銀の斧\",\"color\":\"gray\",\"underlined\":true,\"italic\":false}"}}
+execute at @e[tag=026-water] if score @e[tag=026-water,distance=..0.01,sort=nearest,limit=1] playerNumber = @s playerNumber run clear @s golden_axe{display:{Name:"{\"text\":\"金の斧\",\"color\":\"gold\",\"underlined\":true,\"italic\":false}"}}
 
 replaceitem entity @s hotbar.0 minecraft:stone_axe{display:{Name:"\"古びた斧\"",Lore:["§5木こりの仕事用の斧。","§d年季が入っている。","","§7利き手に持ったとき:"," §2攻撃速度 0.8","§2 攻撃力 8"]},AttributeModifiers:[{Name:"HaruEditor",UUIDLeast:469545656l,UUIDMost:469545656l,Operation:0,AttributeName:"generic.attackDamage",Amount:7d,Slot:"mainhand"},{Name:"HaruEditor",UUIDLeast:469545656l,UUIDMost:469545656l,Operation:0,AttributeName:"generic.attackSpeed",Amount:-3.2d,Slot:"mainhand"}],Enchantments:[{id:efficiency,lvl:2s}],Unbreakable:1b,HideFlags:2}
 

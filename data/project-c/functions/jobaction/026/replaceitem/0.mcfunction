@@ -1,3 +1,2 @@
 replaceitem entity @s hotbar.0 minecraft:stone_axe{display:{Name:"\"古びた斧\"",Lore:["§5木こりの仕事用の斧。","§d年季が入っている。","","§7利き手に持ったとき:"," §2攻撃速度 0.8","§2 攻撃力 8"]},AttributeModifiers:[{Name:"HaruEditor",UUIDLeast:469545656l,UUIDMost:469545656l,Operation:0,AttributeName:"generic.attackDamage",Amount:7d,Slot:"mainhand"},{Name:"HaruEditor",UUIDLeast:469545656l,UUIDMost:469545656l,Operation:0,AttributeName:"generic.attackSpeed",Amount:-3.2d,Slot:"mainhand"}],Enchantments:[{id:efficiency,lvl:2s}],Unbreakable:1b,HideFlags:2}
-scoreboard players reset @a[scores={jobNumber=26,drop=1..}] drop
 scoreboard players reset @s drop
