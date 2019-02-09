@@ -1,0 +1,4 @@
+execute if entity @s[team=Red] run effect give @e[team=Blue,tag=Battle,nbt={HurtTime:10s},distance=..6,sort=nearest,limit=1] slowness 4 0
+execute if entity @s[team=Blue] run effect give @e[team=Red,tag=Battle,nbt={HurtTime:10s},distance=..6,sort=nearest,limit=1] slowness 4 0
+execute if entity @s[team=Red,scores={damageDealt=70..}] run effect give @e[team=Blue,tag=Battle,nbt={HurtTime:10s},distance=..6,sort=nearest,limit=1] slowness 4 1
+execute if entity @s[team=Blue,scores={damageDealt=70..}] run effect give @e[team=Red,tag=Battle,nbt={HurtTime:10s},distance=..6,sort=nearest,limit=1] slowness 4 1
