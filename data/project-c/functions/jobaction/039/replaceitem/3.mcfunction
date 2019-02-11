@@ -1,0 +1,3 @@
+replaceitem entity @s hotbar.3 minecraft:wither_skeleton_skull{display:{Name:"{\"text\":\"トランス\"}",Lore:["発動:攻撃","敵の残HPに応じ、","敵にダメージと強力なバフを与える。"]},AttributeModifiers:[{Name:"HaruEditor",UUIDLeast:1270581031l,UUIDMost:1270581031l,Operation:1,AttributeName:"generic.attackDamage",Amount:-0.9d,Slot:"mainhand"}],HideFlags:2} 1
+playsound minecraft:block.shulker_box.close master @s ~ ~ ~ 0.5 2 0.5
+tag @s add SkillReady3
